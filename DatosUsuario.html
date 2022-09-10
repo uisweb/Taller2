@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+
+<head>
+
+<title> Datos Usuario </title>
+
+</head>
+
+<body>
+
+    <form>
+
+        <h1> Rellena tu CV </h1><br>
+
+            <h3> Nombre: </h3>
+            <input type="text" name='Name' style="position: relative; top: -10px; padding: 1px 1px 1px 1px; width: 250px;">
+            
+            <h3> Apellidos: </h3>
+            <input type="text" name='LastName' style="position: relative; top: -10px; padding: 1px 1px 1px 1px; width: 250px">
+            
+            <h3> Contraseña: </h3>
+            <input type="password" name='Password' style="position: relative; top: -10px; padding: 1px 1px 1px 1px; width: 250px">
+            
+            <h3> Confirme Contraseña: </h3>
+            <input type="password" name='ConfirmedPassword' style="position: relative; top: -10px; padding: 1px 1px 1px 1px; width: 250px">
+
+            <h3> Identificación: </h3>
+            <select style="height: 25px"> 
+                <option disabled='disabled' selected='select'>Tipo</option>
+                <option> TI </option>
+                <option> CC </option>
+
+            </select>
+            <input type='text' name='identification' style="position: relative; top: 0px; padding: 1px 1px 1px 1px; width: 250px; height: 20px;"> 
+
+            <h3> Sexo: </h3>
+
+            <p><input type='radio' name='sex' checked> Hombre </p>
+            <p><input type='radio' name='sex'> Mujer </p>
+
+            <h3> Incluir Mi Foto: </h3>
+            <input type="file" name='Photo' style="position: relative; top: -10px; padding: 1px 1px 1px 1px; width: 500px">
+
+            <p><input type="radio" name='student'> Estudiante... </p>
+
+            <fieldset style="width: 500px;">
+
+            <legend> Datos Personales </legend>
+
+                <h3> Departamento: </h3>
+                <select style="height: 25px; width: 200px;">
+
+                    <option disabled='disabled' selected='select'> -Selecciona </option>
+                    <option> Bolívar </option>
+                    <option> Cundinamarca </option>
+                    <option> Santander </option> 
+                </select>
+                
+                <h3> Fecha de Nacimiento: </h3>
+
+                <p> <input type="text" name='date' style="width: 50px;"> de
+                    <select> 
+
+                        <option disabled='disabled' selected='select'>-Mes</option>
+                        <option> Enero </option>
+                        <option> Febrero </option>
+                        <option> Marzo </option>
+                        <option> Abril </option>
+                        <option> Mayo </option>
+                    </select>  
+                del 
+                <input type="text" name='age'> 
+                </p>
+                <h3> Temas de interés: </h3>
+                <textarea name="temas" rows="5" cols="30"></textarea>
+
+            </fieldset><br>
+        </form>
+        
+        <button type="submit"> Guardar Cambios </button> <button type="reset" style="position: relative; left:20px">Borrar los datos introducidos</button> 
+        <a href="Lista.html" style="position: relative; left:40px"><button> Volver a la página anterior</button></a>
+
+
+    
+
+</body>
+</html>
